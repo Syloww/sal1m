@@ -705,7 +705,7 @@ async function initGames() {
             image: 'https://via.placeholder.com/768x432',
             players: 0,
             visits: 0,
-            studio: 'G.Sylow',
+            studio: 'Sal1m',
             closed: game.closed || false
         }));
         
@@ -820,7 +820,7 @@ function createGameItem(game, index) {
                 <div class="game-overlay">
                     <div class="go-texts">
                         <div class="go-title">${game.name}</div>
-                        <div class="go-meta">by : ${game.studio || 'G.Sylow'}</div>
+                        <div class="go-meta">by : ${game.studio || 'Sal1m'}</div>
                     </div>
                     <div class="go-stats">
                         <span class="go-icon">

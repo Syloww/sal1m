@@ -165,7 +165,7 @@ try {
         $enriched[] = [
             'id' => $game['id'],
             'name' => $details['name'],
-            'studio' => 'G.Sylow',
+            'studio' => 'Sal1m',
             'image' => $details['image'],
             'url' => $game['url'],
             'universeId' => (int)$game['universeId'],
