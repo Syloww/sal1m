@@ -479,20 +479,11 @@ function createPortfolioItem(project, index) {
         ${closedBadge}
         <h3>${project.title}</h3>
     `;
-    
-    // Hover effect
-    item.addEventListener('mouseenter', () => {
-        item.style.transform = 'scale(1.02)';
-    });
-    
-    item.addEventListener('mouseleave', () => {
-        item.style.transform = 'scale(1)';
-    });
-    
+
     item.addEventListener('click', () => {
         openProjectModal(project);
     });
-    
+
     return item;
 }
 
