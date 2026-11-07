@@ -651,53 +651,55 @@ async function initGames() {
     }
     
     try {
-        // Essayer d'abord l'API backend PHP
+        let gamesData = null;
+
+        // Essayer d'abord l'API backend PHP (Hostinger / serveur PHP)
         console.log('📡 [initGames] Tentative de chargement via API backend...');
-        let response = await fetch('/api/games.php'); // ✅ Pour Hostinger
-        
-        if (response.ok) {
-            const gamesData = await response.json();
-            console.log('✅ [initGames] Données récupérées via API backend:', gamesData);
-            
-            if (Array.isArray(gamesData) && gamesData.length > 0) {
-                console.log(`📦 [initGames] ${gamesData.length} jeu(x) chargé(s) via API`);
-                
-                // Calculer le total des visites et des joueurs
-                const totalVisits = gamesData.reduce((sum, game) => {
-                    const visits = parseInt(game.visits) || 0;
-                    return sum + visits;
-                }, 0);
-                
-                const totalPlayers = gamesData.reduce((sum, game) => {
-                    const players = parseInt(game.players) || 0;
-                    return sum + players;
-                }, 0);
-                
-                // Afficher les statistiques
-                displayGamesStats(totalVisits, totalPlayers);
-                
-                // Générer les items de jeux
-                gamesData.forEach((game, index) => {
-                    console.log(`🎨 [initGames] Création du jeu ${index + 1}:`, game);
-                    const gameItem = createGameItem(game, index);
-                    gamesGrid.appendChild(gameItem);
-                });
-                
-                // Observer pour les animations
-                setupGameAnimations();
-                return;
+        try {
+            const apiResponse = await fetch('api/games.php');
+            if (apiResponse.ok) {
+                const text = await apiResponse.text();
+                const trimmed = text.trimStart();
+                // PHP non exécuté (Live Server, file://, etc.) → ignorer
+                if (trimmed && !trimmed.startsWith('<?php') && !trimmed.startsWith('<')) {
+                    const parsed = JSON.parse(trimmed);
+                    if (Array.isArray(parsed) && parsed.length > 0) {
+                        gamesData = parsed;
+                        console.log('✅ [initGames] Données récupérées via API backend:', gamesData);
+                    }
+                } else {
+                    console.warn('⚠️ [initGames] Réponse PHP brute reçue (serveur sans PHP)');
+                }
             }
+        } catch (apiError) {
+            console.warn('⚠️ [initGames] API backend indisponible:', apiError.message);
         }
-        
+
+        if (gamesData) {
+            console.log(`📦 [initGames] ${gamesData.length} jeu(x) chargé(s) via API`);
+
+            const totalVisits = gamesData.reduce((sum, game) => sum + (parseInt(game.visits) || 0), 0);
+            const totalPlayers = gamesData.reduce((sum, game) => sum + (parseInt(game.players) || 0), 0);
+
+            displayGamesStats(totalVisits, totalPlayers);
+
+            gamesData.forEach((game, index) => {
+                console.log(`🎨 [initGames] Création du jeu ${index + 1}:`, game);
+                gamesGrid.appendChild(createGameItem(game, index));
+            });
+
+            setupGameAnimations();
+            return;
+        }
+
         // Fallback: charger depuis games.json
-        console.log('⚠️ [initGames] API backend indisponible, utilisation du fallback...');
-        response = await fetch('games.json');
+        console.log('⚠️ [initGames] Utilisation du fallback games.json...');
+        const response = await fetch('games.json');
         if (!response.ok) throw new Error('HTTP ' + response.status);
-        
+
         const baseGames = await response.json();
         console.log('📦 [initGames] Données de base (fallback):', baseGames);
-        
-        // Transformer en format basique
+
         const games = baseGames.map(game => ({
             id: game.id,
             name: extractGameNameFromUrl(game.url),
@@ -708,21 +710,18 @@ async function initGames() {
             studio: 'Sal1m',
             closed: game.closed || false
         }));
-        
-        // Calculer le total des visites et des joueurs
+
         const totalVisits = games.reduce((sum, game) => sum + (parseInt(game.visits) || 0), 0);
         const totalPlayers = games.reduce((sum, game) => sum + (parseInt(game.players) || 0), 0);
-        
-        // Afficher les statistiques
+
         displayGamesStats(totalVisits, totalPlayers);
-        
+
         games.forEach((game, index) => {
-            const gameItem = createGameItem(game, index);
-            gamesGrid.appendChild(gameItem);
+            gamesGrid.appendChild(createGameItem(game, index));
         });
-        
+
         setupGameAnimations();
-        
+
     } catch (error) {
         console.error('❌ [initGames] Erreur:', error);
         gamesGrid.innerHTML = '<p style="color: var(--text-gray); text-align: center;">Impossible de charger les jeux pour le moment.</p>';
