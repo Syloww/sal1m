@@ -1,110 +1,372 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYLOW | PORTFOLIO</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="icon" type="image/x-icon" href="./images/Design sans titre.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Title & Description -->
+    <title>G.Sylow - Vidéaste, Photographe & Développeur Web | Portfolio Professionnel</title>
+    <meta name="description" content="Portfolio de G.Sylow, créateur multidisciplinaire basé en Alsace. Services professionnels en vidéographie, photographie artistique et développement web. Spécialisé dans les projets créatifs et l'identité visuelle.">
+    <meta name="keywords" content="vidéaste Alsace, photographe professionnel, développeur web, portfolio créatif, G.Sylow, identité visuelle, photographie artistique, développement web moderne">
+    <meta name="author" content="G.Sylow">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://justesylow.com/">
+    <meta property="og:title" content="G.Sylow - Vidéaste, Photographe & Développeur Web">
+    <meta property="og:description" content="Portfolio de G.Sylow, créateur multidisciplinaire basé en Alsace. Services professionnels en vidéographie, photographie artistique et développement web.">
+    <meta property="og:image" content="https://justesylow.com/salim.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="G.Sylow Portfolio">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://justesylow.com/">
+    <meta name="twitter:title" content="G.Sylow - Vidéaste, Photographe & Développeur Web">
+    <meta name="twitter:description" content="Portfolio de G.Sylow, créateur multidisciplinaire basé en Alsace. Services professionnels en vidéographie, photographie artistique et développement web.">
+    <meta name="twitter:image" content="https://justesylow.com/salim.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://justesylow.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="salim.png">
+    <link rel="apple-touch-icon" href="salim.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#8b5cf6">
+    <meta name="msapplication-TileColor" content="#8b5cf6">
+    
+    <!-- Geo-location -->
+    <meta name="geo.region" content="FR-67">
+    <meta name="geo.placename" content="Alsace">
+    
+    <!-- Contact -->
+    <meta name="contact" content="sylowcontact@gmail.com">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<header>
-    <div>
-        SE SITE EST MON ANCIEN PORTFOLIO 
-        <a href="https://sylow.vercel.app">NOUVEAU</a>
-    </div>
-    <div class="lienresp">
-        <a href="https://sylow.vercel.app/" class="lien">Accueil</a>
-        <a href="apropos.html" class="lien">Mon CV</a>
-        <a href="creation.html" class="lien">Créations</a>
-        <a href="#contact" class="lien">Contact</a>
-    </div>
-</header>
-
-<hr>
-
 <body>
-    <div id="particles-js"></div>
-    <main>
-        <div class="box1">
-            <div class="card">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="card-inner">
-                    <div class="profil_reseau focus-in-contract-bck">
-                        <div class="profil" id="moi">
-                            <img src="images/Design sans titre.png" alt="" class="pp swing-in-top-fwd">
-                            <div class="bio">
-                                <div><span>Salut, Je suis Sylow.</span></div>
-                                <div class="bio_descri">Front end developer</div>
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+        <div class="loader-panel loader-panel--violet"></div>
+        <div class="loader-panel loader-panel--white"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <div class="logo"><a href="#home">JusteSylow</a></div>
+            <div class="nav-links">
+                <a href="#home">Accueil</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#games">Jeux</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Background scrolling text -->
+        <div class="scrolling-text-bg">
+            <div class="scrolling-text-content line-1">
+                <span>PORTFOLIO</span>
+                <span>SALIM</span>
+                <span>DEV</span>
+                <span>VIDEO</span>
+                <span>PHOTO</span>
+                <span>CREATIVE</span>
+                <span>PORTFOLIO</span>
+                <span>SALIM</span>
+                <span>DEV</span>
+            </div>
+            <div class="scrolling-text-content line-2">
+                <span>CREATIVE</span>
+                <span>DEV</span>
+                <span>VIDEO</span>
+                <span>PORTFOLIO</span>
+                <span>SALIM</span>
+                <span>PHOTO</span>
+                <span>CREATIVE</span>
+                <span>DEV</span>
+                <span>VIDEO</span>
+            </div>
+            <div class="scrolling-text-content line-3">
+                <span>VIDEO</span>
+                <span>PHOTO</span>
+                <span>SALIM</span>
+                <span>CREATIVE</span>
+                <span>DEV</span>
+                <span>PORTFOLIO</span>
+                <span>VIDEO</span>
+                <span>PHOTO</span>
+                <span>SALIM</span>
+            </div>
+        </div>
+        <div class="hero-left">
+            <h1 class="main-title">
+                <span class="title-line">ça.c'est.moi</span>
+            </h1>
+            <p class="hero-description">
+                Capturer l'instant. Donner vie aux idées. 
+                Je transforme vos projets en expériences visuelles mémorables, 
+                de la vidéo à la photographie en passant par le développement web.
+            </p>
+            <div class="social-links">
+                    <!-- Discord -->
+    <a href="https://discord.gg/Y98rhJfM4g" class="social-icon" aria-label="Discord" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 -28.5 256 256" fill="currentColor" stroke="none">
+            <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"/>
+        </svg>
+    </a>
+    <!-- insta -->
+    <a href="https://www.instagram.com/justesylow_/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="currentColor"<g id="SVGRepo_bgCarrier" stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="currentColor"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="currentColor"></path> </g></svg>
+    </a>
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@justeSylow" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23.498 6.186a2.997 2.997 0 0 0-2.112-2.12C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.386.566A2.997 2.997 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.997 2.997 0 0 0 2.112 2.12C4.495 20.5 12 20.5 12 20.5s7.505 0 9.386-.566a2.997 2.997 0 0 0 2.112-2.12C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
+        </svg>
+    </a>
+                        <a href="https://www.roblox.com/fr/users/2039095611/profile" class="social-icon" aria-label="Roblox" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 192 192" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.9200000000000004"></g><g id="SVGRepo_iconCarrier"><path stroke="currentColor" stroke-linejoin="round" stroke-width="12" d="M29.88 57.549 133.845 29.69l27.857 103.967-103.966 27.857z"></path><path stroke="currentColor" stroke-linejoin="round" stroke-width="12" d="m80 87 25.114-6.73 6.73 25.115-25.115 6.73z"></path></g></svg>
+                    </a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-slot-machine" id="stat-media-projects" data-target="0">
+                        <div class="slot-container">
+                            <div class="slot-column" id="slot-1">
+                                <div class="slot-digit">0</div>
+                                <div class="slot-digit">1</div>
+                                <div class="slot-digit">2</div>
+                                <div class="slot-digit">3</div>
+                                <div class="slot-digit">4</div>
+                                <div class="slot-digit">5</div>
+                                <div class="slot-digit">6</div>
+                                <div class="slot-digit">7</div>
+                                <div class="slot-digit">8</div>
+                                <div class="slot-digit">9</div>
+                                <div class="slot-digit">0</div>
+                                <div class="slot-digit">1</div>
+                                <div class="slot-digit">2</div>
+                                <div class="slot-digit">3</div>
+                                <div class="slot-digit">4</div>
+                                <div class="slot-digit">5</div>
+                                <div class="slot-digit">6</div>
+                                <div class="slot-digit">7</div>
+                                <div class="slot-digit">8</div>
+                                <div class="slot-digit">9</div>
                             </div>
                         </div>
-                        <div class="reseau">
-                            <a href="" class="reseau_icon"><svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                    height="25" viewBox="0 0 24 24" fill="#FFF">
-                                    <path
-                                        d="M12.04 3.5c.59 0 7.54.02 9.34.5a3.02 3.02 0 0 1 2.12 2.15C24 8.05 24 12 24 12v.04c0 .43-.03 4.03-.5 5.8A3.02 3.02 0 0 1 21.38 20c-1.76.48-8.45.5-9.3.51h-.17c-.85 0-7.54-.03-9.29-.5A3.02 3.02 0 0 1 .5 17.84c-.42-1.61-.49-4.7-.5-5.6v-.5c.01-.9.08-3.99.5-5.6a3.02 3.02 0 0 1 2.12-2.14c1.8-.49 8.75-.51 9.34-.51zM9.54 8.4v7.18L15.82 12 9.54 8.41z" />
-                                </svg></a>
-                            <a href="https://github.com/Syloww" class="reseau_icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#FFF" class="bi bi-github" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                              </svg></a>
-                            <a href="https://www.linkedin.com/in/salim-glenac-15a869268/"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#FFF" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                              </svg></a>
-                        </div>
+                        <div class="slot-symbol">+</div>
                     </div>
-
-                    <div class="bio_citation">A propos</div>
-                    <div class="bio_citation2">"Je suis Salim un passionné de code, j'ai pu développer mes compétences via mes spécialités telles que numérique science et informatique (NSI), puis mes compétences en développement web avec un BUT en Métier du Multimédia et de l'Internet."</div>
+                    <p>Projets vidéo et photographie réalisés</p>
                 </div>
-
-            </div>
-            <div class="card7 swing-in-top-fwd">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="card-inner2"></div>
+                <div class="stat-item">
+                    <div class="stat-slot-machine" data-target="4">
+                        <div class="slot-container">
+                            <div class="slot-column" id="slot-2">
+                                <div class="slot-digit">0</div>
+                                <div class="slot-digit">1</div>
+                                <div class="slot-digit">2</div>
+                                <div class="slot-digit">3</div>
+                                <div class="slot-digit">4</div>
+                                <div class="slot-digit">5</div>
+                                <div class="slot-digit">6</div>
+                                <div class="slot-digit">7</div>
+                                <div class="slot-digit">8</div>
+                                <div class="slot-digit">9</div>
+                                <div class="slot-digit">0</div>
+                                <div class="slot-digit">1</div>
+                                <div class="slot-digit">2</div>
+                                <div class="slot-digit">3</div>
+                                <div class="slot-digit">4</div>
+                                <div class="slot-digit">5</div>
+                                <div class="slot-digit">6</div>
+                                <div class="slot-digit">7</div>
+                                <div class="slot-digit">8</div>
+                                <div class="slot-digit">9</div>
+                            </div>
+                        </div>
+                        <div class="slot-symbol">+</div>
+                    </div>
+                    <p>Sites et applications web développés</p>
+                </div>
             </div>
         </div>
-    </main>
+        <div class="hero-right">
+            <div class="accent-block">
+                <img src="salim.png" alt="Profile" class="main-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content-wrapper">
+            <div class="about-left">
+                <div class="about-image-small">
+                    <img src="salim.png" alt="About" class="about-image">
+                </div>
+            </div>
+            <div class="about-right">
+                <h2 class="about-title">qui.suis.je.</h2>
+                <p class="about-description">
+                    Étudiant passionné par la vidéo, la photographie et le développement web, je vis en Alsace 
+                    où j'explore ces trois univers pour créer des solutions créatives. 
+                    Que ce soit pour capturer l'émotion d'un instant, créer une vidéo impactante 
+                    ou concevoir une expérience web unique, j'apporte vision artistique et expertise technique à chaque projet.
+                </p>
+                <p class="about-description">
+                    Depuis le lycée, je conçois et développe des jeux vidéo sur Roblox, ce qui m'a permis de lier programmation, game design et univers créatif. 
+                    En parallèle, je suis responsable communication au sein de la Croix-Rouge et stagiaire secouriste depuis octobre 2025, 
+                    où je participe autant à la mise en valeur des actions de l'association qu'à l'engagement de terrain.
+                </p>
+            </div>
+        </div>
+        <div class="corner-icons">
+            <div class="corner-target top-left-icon">⊞</div>
+            <div class="corner-target top-right-icon">⊞</div>
+            <div class="corner-plus bottom-left-icon">+</div>
+            <div class="corner-plus bottom-right-icon">+</div>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section class="parcours-section">
+        <div class="parcours-content">
+            <h2 class="parcours-title">mon.parcours.</h2>
+            <div class="parcours-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">30 mars - 14 juillet 2026</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Stage chargée de communication</h3>
+                        <p class="timeline-subtitle">Centre de réadaptation de Mulhouse</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 - 2026</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">BUT MMI</h3>
+                        <p class="timeline-subtitle">Métiers du Multimédia et de l'Internet</p>
+                        <p class="timeline-description">Option Développement Web</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2021 - 2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Baccalauréat Général</h3>
+                        <p class="timeline-subtitle">Spécialités Mathématiques & NSI</p>
+                        <p class="timeline-description">Mention Assez Bien</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="Photographie">Photographie</button>
+            <button class="filter-btn" data-filter="Vidéo">Vidéo</button>
+            <button class="filter-btn" data-filter="Développement Web">Développement Web</button>
+        </div>
+        <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Les projets seront générés dynamiquement par JavaScript -->
+        </div>
+    </section>
+
+    <!-- Jeux Roblox Section -->
+    <section id="games" class="games-section">
+        <div class="grid-wrapper">
+            <div class="grid-background"></div>
+            <div class="games-section-content">
+                <div class="games-header-wrapper">
+                    <h2 class="section-title">Créations & Expériences Interactives</h2>
+                    <div class="games-stats" id="gamesStats">
+                        <!-- Les statistiques seront générées dynamiquement par JavaScript -->
+                    </div>
+                    <img src="assets/bulle.png" alt="Bulle" class="draggable-sticker sticker-1" draggable="false">
+                    <img src="assets/mail.png" alt="Mail" class="draggable-sticker sticker-2" draggable="false">
+                    <img src="assets/manette.png" alt="Manette" class="draggable-sticker sticker-3" draggable="false">
+                    <img src="assets/photo.png" alt="Photo" class="draggable-sticker sticker-4" draggable="false">
+                </div>
+                <div class="games-grid" id="gamesGrid">
+                    <!-- Les jeux seront générés dynamiquement par JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="project-modal">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Le contenu sera généré par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Créons ensemble quelque chose <span class="extraordinaire-highlight">d'extraordinaire</span></h2>
+        <p style="color: var(--text-gray); font-size: 18px; margin-bottom: 30px;">Basé en France (Alsace) - Disponible pour projets locaux et distants</p>
+        <a href="mailto:sylowcontact@gmail.com" class="contact-link">contact@justesylow.fr</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-logo">G.SYLOW</p>
+                <p class="footer-tagline">Vidéaste · Photographe · Développeur Web</p>
+                <h4 class="footer-section-title">SUIVEZ MES AVENTURES !</h4>
+                <div class="footer-social-links">
+                    <a href="https://discord.gg/Y98rhJfM4g" class="footer-social-icon" aria-label="Discord" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.536"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#ffffff" fill-rule="nonzero"> </path> </g> </g></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@justeSylow" class="footer-social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M23.498 6.186a2.997 2.997 0 0 0-2.112-2.12C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.386.566A2.997 2.997 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.997 2.997 0 0 0 2.112 2.12C4.495 20.5 12 20.5 12 20.5s7.505 0 9.386-.566a2.997 2.997 0 0 0 2.112-2.12C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.roblox.com/fr/users/2039095611/profile" class="footer-social-icon" aria-label="Roblox" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.9200000000000004"></g><g id="SVGRepo_iconCarrier"><path stroke="#ffffff" stroke-linejoin="round" stroke-width="12" d="M29.88 57.549 133.845 29.69l27.857 103.967-103.966 27.857z"></path><path stroke="#ffffff" stroke-linejoin="round" stroke-width="12" d="m80 87 25.114-6.73 6.73 25.115-25.115 6.73z"></path></g></svg>
+                    </a>
+                        <a href="https://www.instagram.com/justesylow_/" class="footer-social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="currentColor"<g id="SVGRepo_bgCarrier" stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="currentColor"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="currentColor"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="currentColor"></path> </g></svg>
+    </a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Tous droits réservés</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h4 class="footer-section-title">CONTACTE LA TEAM</h4>
+                    <a href="mailto:sylowcontact@gmail.com">contact@justesylow.fr</a>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-section-title">NAVIGUE ICI !</h4>
+                    <a href="#home">Accueil</a>
+                    <a href="#about">À propos</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#games">Jeux</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="loader.js"></script>
 </body>
-
-
-<footer>
-    <div class="chapitre reseau" id="contact">ME CONTACTER</div>
-    <div class="footer_reseau">
-        <a href="https://www.youtube.com/channel/UCZmthPITgTafSqYZ3cpELsg" class="reseau_icon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
-                viewBox="0 0 24 24" fill="#FFF">
-                <path
-                    d="M12.04 3.5c.59 0 7.54.02 9.34.5a3.02 3.02 0 0 1 2.12 2.15C24 8.05 24 12 24 12v.04c0 .43-.03 4.03-.5 5.8A3.02 3.02 0 0 1 21.38 20c-1.76.48-8.45.5-9.3.51h-.17c-.85 0-7.54-.03-9.29-.5A3.02 3.02 0 0 1 .5 17.84c-.42-1.61-.49-4.7-.5-5.6v-.5c.01-.9.08-3.99.5-5.6a3.02 3.02 0 0 1 2.12-2.14c1.8-.49 8.75-.51 9.34-.51zM9.54 8.4v7.18L15.82 12 9.54 8.41z" />
-            </svg></a>
-        <a href="https://github.com/Syloww" class="reseau_icon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#FFF" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-          </svg></a>
-        <a href="https://www.linkedin.com/in/salim-glenac-15a869268/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#FFF" class="bi bi-linkedin" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-              </svg></a>
-    </div>
-
-
-    <div class="footer_flex">
-        <a href="mentionlegal.html" class="footer_lien">Mentions légales</a>
-    </div>
-    <div class="footer_flex">
-        <div class="footer_mention">
-            Tous droits réservés © 2024.
-        </div>
-        <div class="footer_mention">
-            Dernière modification : 28/05/2024
-        </div>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="js/textebio.js"></script>
-<script src="js/particule.js"></script>
-<script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-
 </html>
+

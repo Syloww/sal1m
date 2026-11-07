@@ -1,0 +1,11 @@
+{
+  "name": "Budget CGT",
+  "short_name": "Budget CGT",
+  "description": "Compte partagé — gestion budget CGT",
+  "start_url": "/index.php",
+  "display": "standalone",
+  "background_color": "#0f1419",
+  "theme_color": "#22c55e",
+  "orientation": "portrait-primary",
+  "lang": "fr"
+}
