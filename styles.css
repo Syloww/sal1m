@@ -1303,7 +1303,7 @@ body.is-loading {
 .contact-section {
     padding: 150px 60px;
     text-align: center;
-    background: var(--white);
+    background: transparent;
 }
 
 .contact-section h2 {
